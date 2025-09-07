@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RozgaarDwaar - Employment Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Top Header Bar -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-left">
+                <i class="fas fa-flag"></i>
+                <span>भारत सरकार / Government Of India</span>
+            </div>
+            <div class="top-header-right">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-print"></i>
+                <select class="lang-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
+                </select>
+                <i class="fas fa-volume-up"></i>
+                <div class="text-size">
+                    <span>A-</span>
+                    <span>A</span>
+                    <span>A+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-left">
+                <div class="ministry-logo">
+                    <div class="ashoka-chakra">☸</div>
+                    <div class="ministry-text">
+                        <div>MINISTRY OF SKILL DEVELOPMENT & ENTREPRENEURSHIP</div>
+                        <div>GOVERNMENT OF INDIA</div>
+                    </div>
+                </div>
+                <div class="program-logo">
+                    <div class="pm-logo">
+                        <span class="p-letter">P</span>
+                        <span class="m-letter">M</span>
+                    </div>
+                    <div class="program-text">
+                        <div>RozgaarDwaar</div>
+                        <div>EMPOWERING YOUTH</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="btn-register">
+                    <i class="fas fa-user-plus"></i>
+                    Youth Registration
+                </button>
+                <button class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+                <div class="viksit-bharat">
+                    <div class="viksit-text">विकसित भारत अभियान</div>
+                    <div class="viksit-years">1947 TO 2047</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>HOME</span>
+                </li>
+                <li class="nav-item dropdown">
+                    <i class="fas fa-book"></i>
+                    <span>GUIDANCE</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="guidance.html">Skill Gap Analysis</a></li>
+                        <li><a href="guidance.html">Courses</a></li>
+                        <li><a href="guidance.html">Certifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-video"></i>
+                    <span>INTERVIEW PREP</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>ANALYTICS</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>SCHEMES</span>
+                </li>
+                <li class="nav-item dropdown">
+                    <i class="fas fa-headset"></i>
+                    <span>SUPPORT</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Call Center</a></li>
+                        <li><a href="#">Track Request</a></li>
+                        <li><a href="#">Raise Request</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>PROFILE</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Alert Banner -->
+    <div id="alertBanner" class="alert-banner">
+        <div class="container">
+            <i class="fas fa-info-circle"></i>
+            <span id="bannerMessage">Welcome to RozgaarDwaar! Complete your profile, explore opportunities, and track your progress. New job opportunities updated daily!</span>
+            <button class="banner-close" onclick="closeBanner()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-left">
+                        <h1>Welcome to Your</h1>
+                        <h2>Career Journey</h2>
+                        <div class="hero-subtitle">Discover opportunities, enhance skills, and build your future with India's premier employment portal</div>
+                        <div class="hero-actions">
+                            <button class="btn-primary">
+                                <i class="fas fa-search"></i>
+                                Explore Jobs
+                            </button>
+                            <button class="btn-secondary">
+                                <i class="fas fa-graduation-cap"></i>
+                                Skill Assessment
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="hero-image">
+                            <div class="stats-overlay">
+                                <div class="stat-item">
+                                    <div class="stat-number">50K+</div>
+                                    <div class="stat-label">Job Opportunities</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">25+</div>
+                                    <div class="stat-label">Sectors</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">36</div>
+                                    <div class="stat-label">States/UTs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Logos Scrolling Section -->
+        <section class="company-logos-section">
+            <div class="container">
+                <div class="logos-container">
+                    <div class="logos-track">
+                        <!-- First set of logos -->
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Power_Grid_Corporation_of_India_logo.svg/200px-Power_Grid_Corporation_of_India_logo.svg.png" alt="PowerGrid" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wipro_logo.svg/200px-Wipro_logo.svg.png" alt="Wipro" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/HCL_Technologies_logo.svg/200px-HCL_Technologies_logo.svg.png" alt="HCL" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png" alt="Microsoft" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/200px-Facebook_Logo_%282019%29.png" alt="Facebook" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" alt="Amazon" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png" alt="Apple" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/200px-Netflix_2015_logo.svg.png" alt="Netflix" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Unilever_logo.svg/200px-Unilever_logo.svg.png" alt="Unilever" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Power_Grid_Corporation_of_India_logo.svg/200px-Power_Grid_Corporation_of_India_logo.svg.png" alt="PowerGrid" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wipro_logo.svg/200px-Wipro_logo.svg.png" alt="Wipro" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/HCL_Technologies_logo.svg/200px-HCL_Technologies_logo.svg.png" alt="HCL" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png" alt="Microsoft" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/200px-Facebook_Logo_%282019%29.png" alt="Facebook" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" alt="Amazon" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/200px-Apple_logo_black.svg.png" alt="Apple" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/200px-Netflix_2015_logo.svg.png" alt="Netflix" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Unilever_logo.svg/200px-Unilever_logo.svg.png" alt="Unilever" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eligibility & Benefits Section -->
+        <section class="eligibility-benefits">
+            <div class="container">
+                <div class="eligibility-benefits-grid">
+                    <!-- Eligibility Section -->
+                    <div class="eligibility-section">
+                        <h2 class="section-title">
+                            <span class="title-line"></span>
+                            <div class="title-multiline">
+                                <div class="title-line-1">Are you</div>
+                                <div class="title-line-2"><span class="highlight">Eligible</span>?</div>
+                            </div>
+                            <span class="title-line"></span>
+                        </h2>
+                        <div class="criteria-grid">
+                            <div class="criteria-card">
+                                <div class="criteria-icon">
+                                    <div class="age-circle">
+                                        <span class="age-number">18</span>
+                                        <span class="age-plus">+</span>
+                                    </div>
+                                </div>
+                                <div class="criteria-content">
+                                    <h3>Age</h3>
+                                    <p>18+ Years</p>
+                                </div>
+                            </div>
+                            <div class="criteria-card">
+                                <div class="criteria-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="criteria-content">
+                                    <h3>Job Status</h3>
+                                    <p>Not Employed Full Time</p>
+                                </div>
+                            </div>
+                            <div class="criteria-card">
+                                <div class="criteria-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="criteria-content">
+                                    <h3>Education</h3>
+                                    <p>Not Enrolled Full Time</p>
+                                </div>
+                            </div>
+                            <div class="criteria-card">
+                                <div class="criteria-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="criteria-content">
+                                    <h3>Family (Self/Spouse/Parents)</h3>
+                                    <ul>
+                                        <li>No one is Earning more than ₹8 Lakhs PA</li>
+                                        <li>No Member has a Govt. Job</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits Section -->
+                    <div class="benefits-section">
+                        <h2 class="section-title">
+                            <span class="title-line"></span>
+                            <div class="title-multiline">
+                                <div class="title-line-1">Core</div>
+                                <div class="title-line-2">Benefits</div>
+                                <div class="title-line-3"><span class="highlight">RozgaarDwaar</span></div>
+                                <div class="title-line-4">for</div>
+                            </div>
+                            <span class="title-line"></span>
+                        </h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                    <i class="fas fa-clock benefit-overlay"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Experience</h3>
+                                    <p>12 months real-life experience in India's top companies</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-wallet"></i>
+                                    <span class="rupee-symbol">₹</span>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Monthly Assistance</h3>
+                                    <p>Monthly assistance of ₹4500 by Government of India and ₹500 by Industry</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-coins"></i>
+                                    <span class="rupee-symbol">₹</span>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>One-time Grant</h3>
+                                    <p>One-time Grant of ₹6000 for incidentals</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-user-alt"></i>
+                                    <div class="opportunity-arrows">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <i class="fas fa-arrow-down"></i>
+                                    </div>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Sectors and Companies</h3>
+                                    <p>Select from Various Sectors and from top Companies of India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Stats -->
+        <section class="dashboard-stats">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-line"></span>
+                    Dashboard Overview
+                    <span class="title-line"></span>
+                </h2>
+                <div class="stats-grid">
+                    <div class="stat-card primary">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">118K+</div>
+                            <div class="stat-label">Job Opportunities</div>
+                        </div>
+                    </div>
+                    <div class="stat-card secondary">
+                        <div class="stat-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Sectors</div>
+                        </div>
+                    </div>
+                    <div class="stat-card tertiary">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">36</div>
+                            <div class="stat-label">States/UTs</div>
+                        </div>
+                    </div>
+                    <div class="stat-card quaternary">
+                        <div class="stat-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">734</div>
+                            <div class="stat-label">Districts</div>
+                        </div>
+                    </div>
+                    <div class="stat-card quinary">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Qualifications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Categories -->
+        <section class="job-categories">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-line"></span>
+                    Explore Opportunities in Various Sectors
+                    <span class="title-line"></span>
+                </h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="category-label">Technology</div>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <div class="category-label">Healthcare</div>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="category-label">Finance</div>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="category-label">Education</div>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-industry"></i>
+                        <div class="category-label">Manufacturing</div>
+                    </div>
+                </div>
+                <div class="show-more">
+                    <button class="btn-show-more">Show More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-line"></span>
+                    Quick Actions
+                    <span class="title-line"></span>
+                </h2>
+                <div class="actions-grid">
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3>Upload Resume</h3>
+                        <p>Get ATS score and job matching</p>
+                        <button class="btn-action">Upload Now</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Find Jobs</h3>
+                        <p>Search from 50K+ opportunities</p>
+                        <button class="btn-action">Search Jobs</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Skill Assessment</h3>
+                        <p>Identify skill gaps and courses</p>
+                        <button class="btn-action">Assess Skills</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Interview Prep</h3>
+                        <p>Practice with mock interviews</p>
+                        <button class="btn-action">Start Practice</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-line"></span>
+                    Recent Activity
+                    <span class="title-line"></span>
+                </h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Applied for Software Developer at TechCorp</div>
+                            <div class="activity-time">2 hours ago</div>
+                        </div>
+                        <div class="activity-status pending">Pending</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Completed Python Fundamentals Course</div>
+                            <div class="activity-time">1 day ago</div>
+                        </div>
+                        <div class="activity-status completed">Completed</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Earned "Skill Enhancer" Badge</div>
+                            <div class="activity-time">3 days ago</div>
+                        </div>
+                        <div class="activity-status completed">Completed</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <div class="ministry-logo-footer">
+                            <div class="ashoka-chakra">☸</div>
+                            <div class="ministry-text">
+                                <div>MINISTRY OF SKILL DEVELOPMENT & ENTREPRENEURSHIP</div>
+                                <div>GOVERNMENT OF INDIA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Social Media</h4>
+                        <div class="social-icons">
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Get to Know</h4>
+                    <ul>
+                        <li><a href="#">Partner Companies</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Manuals</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>A Wing, 5th Floor, Shastri Bhawan, Dr Rajendra Prasad Rd, New Delhi-110001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rozgaardwaar@msde.gov.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>1800 11 6090</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Download Mobile App</h4>
+                    <p>Click the button below to download the app or scan the QR code with your phone.</p>
+                    <button class="btn-play-store">
+                        <i class="fab fa-google-play"></i>
+                        GET IT ON Google Play
+                    </button>
+                    <div class="qr-code">
+                        <div class="qr-placeholder">QR Code</div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="site-info">
+                        <div class="build-version">Build Version: 1756988512377</div>
+                        <div class="visitor-count">
+                            <div class="visitor-number">4,13,48,891</div>
+                            <div class="visitor-label">Total Visitors</div>
+                        </div>
+                        <div class="site-ownership">This site is owned by Ministry of Skill Development & Entrepreneurship.</div>
+                        <div class="copyright">© 2024 RozgaarDwaar, All Rights Reserved.</div>
+                        <div class="tech-collab">Technical collaboration with BISAG-N.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-bubble">Hi! I'm Udyog Sathi. How can I help you today?</div>
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div class="chatbot-modal" id="chatbotModal">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                Udyog Sathi
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I'm Udyog Sathi, your career assistant. How can I help you today?
+                </div>
+                <div class="message-time">Just now</div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type your message...">
+            <button id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/banner-alert.js"></script>
+</body>
+</html>
