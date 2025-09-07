@@ -18,8 +18,8 @@ RozgaarDwaar is a comprehensive career guidance platform designed to help job se
 - Salary expectation analysis
 
 ### 3. Career Guidance Dashboard
-- Application tracking (245+ applications)
-- Interview success rate analytics (24.5%)
+- Application tracking 
+- Interview success rate analytics 
 - Skills improvement tracking
 - Certification progress
 
