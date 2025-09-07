@@ -4,12 +4,18 @@
 RozgaarDwaar is a comprehensive career guidance platform designed to help job seekers with skill assessment, interview preparation, and career planning. The web application provides personalized recommendations based on user skills and career goals.
 
 ## Verified Features
+## Preview
+![Homepage Screenshot]
+<img width="1897" height="868" alt="image" src="https://github.com/user-attachments/assets/473718f9-2c52-4892-adf7-276e3efe921c" />
 
 ### 1. Resume Analysis & ATS Score Prediction
 - PDF/Text resume upload and parsing
 - ATS compatibility scoring (0-100%)
 - Detailed improvement recommendations
 - Keyword optimization suggestions
+
+  ![Resume Analysis Screenshot]
+  <img width="1914" height="817" alt="image" src="https://github.com/user-attachments/assets/1a551f12-2b3d-4201-8037-f1d649d6f2b8" />
 
 ### 2. Job Matching System
 - Skills-based matching algorithm
@@ -28,6 +34,7 @@ RozgaarDwaar is a comprehensive career guidance platform designed to help job se
 - Mock interview simulation
 - Company-specific preparation
 - Performance feedback
+<img width="1895" height="786" alt="image" src="https://github.com/user-attachments/assets/b0d5c371-d919-4641-aaac-13501b727beb" />
 
 ### 5. Udyog Sathi Chatbot
 - Career guidance assistant
@@ -37,11 +44,15 @@ RozgaarDwaar is a comprehensive career guidance platform designed to help job se
   - Resume analysis
   - Government schemes
   - Support queries
+    <img width="1898" height="846" alt="image" src="https://github.com/user-attachments/assets/80ce97f6-ff83-4747-9d3e-3d00b67e04b9" />
+
 
 ### 6. Government Scheme Awareness
 - PMKVY, Startup India, Mudra loans
 - Eligibility checking
 - Online application support
+  <img width="1898" height="864" alt="image" src="https://github.com/user-attachments/assets/a2b64369-8d9b-48c6-81b7-d51d767ffd8b" />
+
 
 ## Tech Stack
 
